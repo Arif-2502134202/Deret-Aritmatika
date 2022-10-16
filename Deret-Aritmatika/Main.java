@@ -14,43 +14,43 @@ public class Main {
 		System.out.println("Belajar Deret Aritmatika, Geometri, dan Menghitung Faktorial");
 		System.out.println("");
       
-        Scanner scanner = new Scanner(System.in);
+        	Scanner scanner = new Scanner(System.in);
           
-        while(pengulangan) {
+        	while(pengulangan) {
 			do {
 				System.out.print("Masukkan jumlah angka yang akan dicetak [2..10] : ");
-                jumlahAngka = scanner.nextInt();
-                if (checkJumlahAngka(jumlahAngka)) {
+                		jumlahAngka = scanner.nextInt();
+                		if (checkJumlahAngka(jumlahAngka)) {
 					isOk1 = true;            
-                } else {
+                		} else {
 					System.out.println("Jumlah angka minimal 2 maksimal 10");
-                }
-            } while (!isOk1);
+                		}
+            		} while (!isOk1);
 			
 			do {
 				System.out.print("Masukkan beda masing-masing angka [2..9] : ");
-                bedaAngka = scanner.nextInt();
-                if (checkBedaAngka(bedaAngka)) {
+                		bedaAngka = scanner.nextInt();
+                		if (checkBedaAngka(bedaAngka)) {
 					isOk2 = true;
-                } else {
+                		} else {
 					System.out.println("Beda angka minimal 2 maksimal 9");
-                }
-            } while (!isOk2);
+                		}
+            		} while (!isOk2);
 			
 			System.out.println("");
 			deretAritmatika(jumlahAngka,bedaAngka);
 			deretGeometri(jumlahAngka,bedaAngka);
 			deretFaktorial(jumlahAngka,bedaAngka);
 							
-            System.out.print("Apakah Anda ingin mengulang ?[Y/T]");
+           		System.out.print("Apakah Anda ingin mengulang ?[Y/T]");
 			   
-            ulang = scanner.next();
-            if (ulang.equalsIgnoreCase("t")) {
+            		ulang = scanner.next();
+            		if (ulang.equalsIgnoreCase("t")) {
 				pengulangan = false;
-            }
+            		}
 		}
 
-        System.out.println("Program selesai");
+        	System.out.println("Program selesai");
 	}
 	
 	public static boolean checkJumlahAngka(int jumlahAngka) {
